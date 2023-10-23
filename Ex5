@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int tempo, segundos, minutos, horas, i,n;
+    float massai, massaf;
+
+    printf("Insira a massa inicial: ");
+    scanf("%f", &massai);
+    massaf=massai;
+    while (massaf>0.5){
+        massaf/=2;
+        tempo+=50;
+    }
+    printf("%d\n", tempo);
+    while (tempo>=60){
+        segundos=tempo;
+        minutos+=segundos/60;
+        n+=segundos/60;
+        segundos%=60;
+        tempo/=60;
+    }
+    while (n>=60){
+        horas+=minutos/60;
+        minutos%=60;
+        n/=60;
+    }
+    printf("Massa final: %.2f\nMassa inicial: %.2f\nDemorou: %d horas, %d minutos , %d segundos", massaf, massai, horas, minutos, segundos);
+    return 0;
+}
