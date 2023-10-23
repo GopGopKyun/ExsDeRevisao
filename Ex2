@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    float numero1, numero2, soma;
+    numero1=1;
+    numero2=1;
+    soma=1;
+    
+    for (i=0;i<49;i++){
+       numero1+=2;
+       numero2+=1;
+       soma+=numero1/numero2;
+    }
+    
+    printf("%.2f", soma);
+
+    return 0;
+}
