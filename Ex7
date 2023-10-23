@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, n, soma;
+    
+    printf("Insira um numero: ");
+    scanf("%d", &n);
+    
+    for (i=0;i<n+1;i++){
+        soma+=i;
+    }
+    
+    printf("A soma sera: %d", soma);
+    return 0;
+}
