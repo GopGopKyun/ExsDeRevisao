@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    float porcentagem, salario, salarionovo;
+    salario=1000;
+    porcentagem=3;
+    
+    for (i=2006;i<2023;i++){
+        if (i==2006){
+            salarionovo+=salario*(1.5/100);
+        }
+        else
+        {
+        salarionovo+=salario*(porcentagem/100);
+        porcentagem*=2; 
+        }
+    }
+    
+    printf("Salario atual do funcionario: %.2f", salarionovo);
+
+    return 0;
+}
