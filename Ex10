@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+    char str[5]=("*****");
+    
+    printf("Insira um numero de 1 a 20: ");
+    scanf("%d", &n);
+    
+    for (i=0; i<n; i++){
+        puts (str);
+    }
+
+    return 0;
+}
+
