@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+
+    float a, b, media;
+    
+    printf("Insira a primeira nota: ");
+    scanf("%f", &a);
+    if (a<=10 && a>=0){
+        media += a;
+    }
+    else{
+        printf("Valor invalido.");
+        return 0;
+    }
+    printf("Insira a segunda nota: ");
+    scanf("%f", &b);
+    if (b<=10 && b>=0){
+        media += b;
+    }
+    else{
+        printf("Valor invalido.");
+        return 0;
+    }
+        media/=2;
+        printf("Media: %.2f", media);
+    return 0;
+}
+
