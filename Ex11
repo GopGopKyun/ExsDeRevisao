@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    
+    printf("Insira sua senha: ");
+    scanf("%d", &a);
+    
+    while (a!= 8080){
+        printf("Senha incorreta, tente novamente: ");
+        scanf("%d", &a);
+    }
+
+    printf("Senha Correta");
+
+    return 0;
+}
