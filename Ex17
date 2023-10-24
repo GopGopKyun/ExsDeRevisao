@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main ()
+{
+   int i, j, n;
+   char frase[100], vogais[]="aeiouAEIOU";
+   
+    n=strlen(vogais);
+   
+   printf("Insira sua frase: ");
+   gets(frase);
+   printf("\n");
+
+    for (i=0;i<strlen(frase);i++){
+        
+        for(j=0;j<n;j++)   
+        if(frase[i]==vogais[j])
+            
+            break;
+            
+        
+        if(j == n)
+            
+            printf("%c", frase[i]);
+            
+            
+        
+    
+    }
+    
+    
+
+    return 0;
+}
