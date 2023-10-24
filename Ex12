@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main()
+{
+    int voto, a, b, c, branco, nulo;
+    float porcentagemnulo, porcentagembranco, n;
+    n=-1;
+    while (voto != 6){
+
+    printf("1. Candidato Jair Rodrigues\n2. Candidato Carlos Luz\n3. Candidato Neves Rocha\n4. Nulo\n5. Branco\nInsira o numero correspondente ao seu voto: ");
+    scanf("%d", &voto);
+    n++;
+    if (voto == 1){
+        a+=1;
+    }
+    else if (voto == 2){
+        b+=1;
+    }
+    else if (voto == 3){
+        c+=1;
+    }
+    else if (voto == 4){
+        nulo+=1;
+    }
+    else if (voto == 5){
+        branco+=1;
+    }
+    }
+    (porcentagemnulo=nulo/(n/100));
+    (porcentagembranco=branco/(n/100));
+    printf("Candidato Jair Rodrigues: %d\nCandidato Carlos Luz: %d\nCandidato Neves Rocha: %d\n", a, b, c);
+    printf("%.2f%% de votos nulos\n", porcentagemnulo);
+    printf("%.2f%% de votos brancos\n", porcentagembranco);
+    if (a>b && a>c){
+        printf("Candidato Jair Rodrigues venceu");
+    }
+    else if (b>a && b>c){
+        printf("Candidato Carlos Luz venceu");
+    }
+    else if (c>a && c>b){
+        printf("Candidato Neves Rocha venceu");
+    }
+    else{
+        printf("Empate");
+    }
+    return 0;
+    }
+
+/* 
+12 - Faça um programa que simule a urna eletrônica.
+A tela a ser apresentada deverá ser da seguinte forma:
+As opções sao:
+1. Candidato Jair Rodrigues
+2. Candidato Carlos Luz
+3. Candidato Neves Rocha
+4. Nulo
+5. Branco
+Entre com o seu voto:
+O programa deverá ler os votos dos eleitores e, quando for entrado o número 6,
+apresentar as seguintes informações:
+a) O número de votos de cada candidato;
+b) A porcentagem de votos nulos;
+c) A porcentagem de votos brancos; d) O candidato vencedor. */
